@@ -2,8 +2,11 @@
   "name": "mocha-webdriver-page-objects-example",
   "version": "0.0.1",
   "description": "A stab at using page objects with mocha and webdriverjs.",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha"
+  },
   "devDependencies": {
-    "selenium-webdriver": "2.45.1",
+    "selenium-webdriver": "2.53.1",
     "mocha": "2.2.4",
     "chai": "2.3.0"
   }
