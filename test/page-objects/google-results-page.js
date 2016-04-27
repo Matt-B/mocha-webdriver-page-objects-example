@@ -8,7 +8,7 @@ GoogleResultsPage.prototype = Object.create(page.prototype);
 GoogleResultsPage.prototype.constructor = GoogleResultsPage;
 
 GoogleResultsPage.prototype.getDisplayedResults = function() {
-  return this.driver.findElements({ css: 'li.g' });
+  return this.driver.findElements({ css: 'div.g' });
 };
 
 module.exports = GoogleResultsPage;
