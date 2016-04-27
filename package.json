@@ -6,8 +6,8 @@
     "test": "node_modules/mocha/bin/mocha"
   },
   "devDependencies": {
-    "selenium-webdriver": "2.53.1",
-    "mocha": "2.4.5",
-    "chai": "3.5.0"
+    "selenium-webdriver": "^2.53.1",
+    "mocha": "^2.4.5",
+    "chai": "^3.5.0"
   }
 }
