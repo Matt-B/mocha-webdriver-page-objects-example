@@ -1,5 +1,7 @@
 # mocha-webdriver-page-objects-example
 
+![build status](https://travis-ci.org/Matt-B/mocha-webdriver-page-objects-example.svg?branch=master)
+
 A stab at using page objects with mocha and webdriverjs.
 
 This is a first go at trying to apply the [page object model](https://code.google.com/p/selenium/wiki/PageObjects) pattern to functional tests using [mocha](http://mochajs.org) and the [webdriver js bindings](https://code.google.com/p/selenium/wiki/WebDriverJs). I wrote this out because I couldn't find any other examples elsewhere. Feel free to submit a pull request if you spot anything that could be done better.
