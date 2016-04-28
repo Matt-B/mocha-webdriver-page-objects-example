@@ -1,11 +1,12 @@
 language: node_js
 node_js:
-  - "node"
-
+- node
 env:
 - PLATFORM=FIREFOX
-
 before_script:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-  - sleep 3 # give xvfb some time to start
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+- sleep 3
+notifications:
+  email:
+    secure: Wce0F3QGtTbbgX00v8pq2e5LCYNSHkmztNKcl+mPLsRYtsNh42qlZ6SvhmssqhsO4ANESiWpWHxOGbU4eHfsOxufqMAAqYAQJxERpa2svgxgHJt1S8Emz/pcknJMCmwSN8bsmp65//imoRPMDazfWkGsrOWjZ2aONp85UfRQLQdyC7ghC1GKfmNeZ5PYrXu/laRL9yseY16AyLQovqkUFaRGZnbxeC6nk3kwtWAn67CfJQKaaVxU5jNfE5Q88x1b2f5H1f+jDO4ABkyVNYEufqvJs/ev7rWPE8+2O0srwMM3L6o3txmV4d7CGUmoXjmAzHMs3JvAgJonWVN0UxKyinoZ6399JJRrSZmrxEq3DFAhzu9ijxHM561OTQ1sZFNXfHChfKAEsAEZN7Tlfi50RyW3g/pkEX/z2xPNQ/ZzzZCBn2Vmecz6b1lYZKQtG/5c3gcmNlWcKKcv6FzcEF3mBgr/8A5v3+pZPib7fxXiuauV0NVY5H4QEbXLzTZNHVdIsVx2dZGOfAnMYDe8qYgbEX8TU0j/Ql+jcmzOAwG+JE/95CttL6TgbDxCQGVIz/BdSxAJZ68Xf9xFyqtAcHzjXSKm/4CeeKlYBTXOVEv2VSkz+lUxc1lIdJY2HE7HlIcslDV3G35m/9ITAUhCOCWq4DsyY+z9883h38mctgsRh3s=
