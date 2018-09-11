@@ -13,7 +13,7 @@ GoogleSearchPage.prototype.typeSearchQuery = function(searchQuery) {
 };
 
 GoogleSearchPage.prototype.clickSearchButton = function() {
-  this.driver.findElement({ name: 'btnK' }).click();
+  this.driver.executeScript("document.getElementsByName('btnK')[0].click();");
   this.waitFor({ id: 'search' });
   return new GoogleResultsPage(this.driver);
 };
