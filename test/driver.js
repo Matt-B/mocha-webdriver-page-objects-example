@@ -1,5 +1,5 @@
-var webdriver =require('selenium-webdriver'),
-  driver;
+var {Builder, By, until} = require('selenium-webdriver');
+var driver;
 
 var getDriver = function() {
   if(driver) {
@@ -13,13 +13,9 @@ var getDriver = function() {
 var buildDriver = function() {
   switch(process.env.PLATFORM) {
     case 'FIREFOX':
-      return new webdriver.Builder().
-        withCapabilities(webdriver.Capabilities.firefox()).
-        build();
+      return new Builder().forBrowser("firefox").build();
     default:
-      return new webdriver.Builder().
-        withCapabilities(webdriver.Capabilities.chrome()).
-        build();
+      return new Builder().forBrowser("chrome").build();
   }
 };
 
